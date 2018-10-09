@@ -33,9 +33,6 @@ public class SCChallengeEmail{		// Creates our main class
 		
 		}
 
-		//while (Scan.hasNext()){
-			//System.out.println(Scan.nextLine());	// a while loop to print all the lines of source code	REMOVE THIS
-		//}
 	}
 	public static String WebAddress(String id){
 		String webHolder = "https://www.ecs.soton.ac.uk/people/";
