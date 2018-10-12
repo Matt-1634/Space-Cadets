@@ -23,7 +23,6 @@ public class SCChallengeEmail{		// Creates our main class
 		Scanner Scan = new Scanner(Url.openStream());	// scans the entire urlext
 		
 		
-		// from this point on is testing. NEED A REGULAR EXPRESSION! USE NOTESWIKI FOR HELP Search for property="name">NAME IS HERE<
 		Pattern namePattern = Pattern.compile("property=\"name\">([a-z A-Z]*)");
 
 		while (Scan.hasNext()){
