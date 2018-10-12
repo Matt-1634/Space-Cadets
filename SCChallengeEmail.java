@@ -13,30 +13,23 @@ public class SCChallengeEmail{		// Creates our main class
 		
 		System.out.println("Enter an ID:");
 		String id = br.readLine();
-		//System.out.println(id);
 		
 		String WebPage = WebAddress(id);
-		//System.out.println(WebPage);		We currently have the webpage if the id is entered
-		
 		
 		URL Url = new URL(WebPage);	// saves the url as a url
 		Scanner Scan = new Scanner(Url.openStream());	// scans the entire urlext
 		
-		
 		Pattern namePattern = Pattern.compile("property=\"name\">([a-z A-Z]*)");
-
 		while (Scan.hasNext()){
 			Matcher name = namePattern.matcher(Scan.nextLine());
 			if (name.find())
 				System.out.println(name.group(1));
-		
 		}
 
 	}
 	public static String WebAddress(String id){
 		String webHolder = "https://www.ecs.soton.ac.uk/people/";
 		webHolder+=id;
-		return webHolder;
-		
+		return webHolder;	
 	}
 }
