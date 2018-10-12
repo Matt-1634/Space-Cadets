@@ -25,7 +25,6 @@ public class SCChallengeEmail{		// Creates our main class
 			if (name.find())
 				System.out.println(name.group(1));
 		}
-
 	}
 	public static String WebAddress(String id){
 		String webHolder = "https://www.ecs.soton.ac.uk/people/";
